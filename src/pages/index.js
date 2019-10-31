@@ -1,11 +1,14 @@
 import React from "react"
-import { Link, navigate } from "gatsby"
-import { getAccessToken, isLoggedIn } from "../services/auth"
-
+import { Link } from "gatsby"
+import Button from '@material-ui/core/Button'
 import Layout from "../components/layout"
 
 export default () => (
-  <Layout>
-    {navigate('/app/login')}
-  </Layout>
+    <Layout>
+        <Button
+            style={{ marginTop: '12px'}}
+            variant="contained"
+            color="secondary"
+        > <Link to="/app/login"> Login</Link> </Button>
+    </Layout>
 )
