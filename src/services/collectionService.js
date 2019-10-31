@@ -3,7 +3,7 @@ import { getAccessToken } from './auth';
 
 export const fetchCollection = async () => {
     const token = getAccessToken();
-    const request = axios.get('https://2d8054ce.ngrok.io/getAll', {
+    const request = axios.get('https://17caf9f8.ngrok.io/getAll', {
         headers: {
             'Authorization' : `Bearer ${token}`
         }
@@ -14,7 +14,7 @@ export const fetchCollection = async () => {
 
 export const addItem = async (item) => {
     const token = getAccessToken();
-    const request = axios.post('https://2d8054ce.ngrok.io/set', item, {
+    const request = axios.post('https://17caf9f8.ngrok.io/set', item, {
         headers: {
             'Authorization' : `Bearer ${token}`
         }

@@ -9,11 +9,11 @@ export const getAccessToken = () =>
 
 
 export const handleLogin = async (credentials) => {
-    return axios.post(`https://2d8054ce.ngrok.io/login`, credentials);
+    return axios.post(`https://17caf9f8.ngrok.io/login`, credentials);
 }
 
 export const handleRegister = async (credentials) => {
-    return axios.post(`https://2d8054ce.ngrok.io/register`, credentials)
+    return axios.post(`https://17caf9f8.ngrok.io/register`, credentials)
 }
 
 export const isLoggedIn = () => {
@@ -24,7 +24,7 @@ export const isLoggedIn = () => {
 
 export const logout = async () => {
     const token = window.localStorage.getItem('access_token')
-    return axios.post(`https://2d8054ce.ngrok.io/logout/access`, {}, {
+    return axios.post(`https://17caf9f8.ngrok.io/logout/access`, {}, {
         headers: {
             'Authorization' : `Bearer ${token}`
         }
