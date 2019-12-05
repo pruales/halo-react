@@ -1,5 +1,5 @@
 # Halo Coding Challenge Frontend
-Its deployed through netlify here: https://laughing-hoover-481394.netlify.com/
+~Its deployed through netlify here: https://laughing-hoover-481394.netlify.com/~
 
 Python backend can be found [here](https://github.com/pruales/halo-backend). 
 
